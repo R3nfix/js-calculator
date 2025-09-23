@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Font_Roboto.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Roboto, 'sans-serif';
+    font-weight: 400;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: Roboto, 'sans-serif';
+}
+
+.header__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__calculator-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__field-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 310px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.main__field-text, input {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: default;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 30px;
+    padding-left: 15px;
+    box-shadow: 12px 12px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    outline: none;
+}
+
+.main__calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 60px);
+    gap: 10px;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 15px;
+    width: 270px;
+    box-shadow: 12px 12px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main__btn--buttons {
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.main__btn--buttons:hover {
+    background-color: #D3D3D3;
+    transition: 0.3s;
+}
+
+.main__btn--buttons--darkgray--zero {
+    grid-column: span 2;
+    border-radius: 35px;
+}
+
+.main__btn--buttons--silver {
+    background-color: #C0C0C0;
+}
+
+.main__btn--buttons--darkgray {
+    background-color: #696969;
+    color: #fff;
+}
+
+.main__btn--buttons--orange {
+    background-color: #FFA500;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
