@@ -16,7 +16,7 @@ const buttonElements = document.querySelectorAll('[data-button]');
                 const number = parseFloat(fieldElement.value);
                 fieldElement.value = (number / 100).toString();
             } else if (buttonValue === '=') {
-                const expression = fieldElement.value;
+                const expression = fieldElement.value.replace(/,/g, '.');
                 const operators = ['/', '*', '+', '-'];
                 let operator = null;
 
@@ -52,7 +52,6 @@ const buttonElements = document.querySelectorAll('[data-button]');
                     result = "Ошибка!";
                 } else { 
                     result = firstNum / secondNum;
-                    fieldElement.value = result;
                 }
 
                 break;
@@ -61,7 +60,7 @@ const buttonElements = document.querySelectorAll('[data-button]');
                 result = 'Ошибка!';
             }
 
-            fieldElement.value = result;
+            fieldElement.value = result.toString().replace('.', ',');
         }
         } else {
             fieldElement.value += buttonValue;
