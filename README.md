@@ -11,4 +11,4 @@
   <li>BEM</li>
 </ul>
 
-Ссылка на сайт: <a href="https://r3nfix.github.io/js-calculator/">r3nfix.github.io/js-calculator/</a>
+Ссылка на сайт: <a href="https://r3nfix.github.io/js-calculator/">https://r3nfix.github.io/js-calculator/</a>
